@@ -11,9 +11,69 @@
 
 <main>
     <div class="jumbotron">
-        <h1>Suivi</h1>
-        <p>Bienvenue à Easytech</p>
-    </div>
+        <h1>Bienvenue à l'Easytech</h1>
+       
+        <form data-toggle="validator" role="form">
+                <div class="form-group">
+                  <label for="inputName" class="control-label">Nom</label>
+                  <input type="text" class="form-control" id="inputNom" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                        <label for="inputName" class="control-label">Prénom</label>
+                        <input type="text" class="form-control" id="inputPrenom" placeholder="Votre prénom" required>
+                      </div>
+                <div class="form-group">
+                  <label for="inputPassword" class="control-label">Password</label>
+                  <div class="form-inline row">
+                    <div class="form-group col-sm-6">
+                      <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+                      <div class="help-block">Minimum of 6 characters</div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                <label for="inputName" class="control-label">Catégories:</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="underwear" required>
+                      Trans
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="underwear" required>
+                      Prod 1
+                    </label>
+                  </div>
+                  <div class="radio">
+                        <label>
+                          <input type="radio" name="underwear" required>
+                          Prod 2
+                        </label>
+                  </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="underwear" required>
+                         Prod 3
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="underwear" required>
+                         Prod 4
+                        </label>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Créer</button>
+                </div>
+              </form>
+
 </main>
 
 <footer>
